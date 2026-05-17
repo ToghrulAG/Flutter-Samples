@@ -1,0 +1,13 @@
+flutter pub add flutter_localizations --sdk=flutter
+flutter pub add intl:any
+
+
+flutter:
+  uses-material-design: true
+  generate: true # Bu satırı ekliyoruz veya yorum satırındaysa aktifleştiriyoruz
+
+l10n.yaml dosyasını oluştur ve içine şu ayarları birebir yapıştırıp kaydet:
+
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
